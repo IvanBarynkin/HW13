@@ -60,12 +60,12 @@ class Author {
         return firstName + " " + secondName;
     }
 
-    public boolean equals(Object obj){
+    public boolean equals(Object obj) {
         return obj instanceof Author;
     }
 
     public int hashCode() {
-        return 10*(this.toString()).hashCode();
+        return 10 * (this.toString()).hashCode();
     }
 
 }
@@ -110,7 +110,7 @@ class Book {
         return author.toString() + " " + year + " \"" + name + "\"";
     }
 
-    public boolean equals(Object obj){
+    public boolean equals(Object obj) {
         return obj instanceof Book;
     }
 
