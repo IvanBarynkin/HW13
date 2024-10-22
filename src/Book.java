@@ -39,17 +39,19 @@ class Book {
     public String toString() {
         return author.toString() + " " + year + " \"" + name + "\"";
     }
+
     @Override
     public boolean equals(Object other) {
-        if(this.getClass() != other.getClass()){
+        if (this.getClass() != other.getClass()) {
             return false;
         }
         Book book2 = (Book) other;
         return (name.equals(book2.name) && this.year == book2.year && author.equals(book2.author));
     }
+
     @Override
     public int hashCode() {
-        return Objects.hash(name,author,year);
+        return Objects.hash(name, author, year);
     }
 
 
