@@ -23,7 +23,6 @@ class App {
 
         System.out.println(firstAuthor.equals(secondAuthor));
         System.out.println(secondAuthor.equals(firstAuthor));
-
     }
 }
 

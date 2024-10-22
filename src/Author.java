@@ -37,16 +37,17 @@ class Author {
 
     @Override
     public boolean equals(Object other) {
-        if(this.getClass()!=other.getClass()){
+        if (this.getClass() != other.getClass()) {
             return false;
         }
         Author author2 = (Author) other;
         return (firstName.equals(author2.firstName) && secondName.equals(author2.secondName));
 
     }
+
     @Override
     public int hashCode() {
-        return Objects.hash(firstName,secondName);
+        return Objects.hash(firstName, secondName);
     }
 
 }
